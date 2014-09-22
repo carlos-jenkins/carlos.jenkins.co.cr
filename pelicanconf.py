@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Costa_Rica'
 
 DEFAULT_LANG = u'en'
 
@@ -18,16 +18,26 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = ()
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+PLUGIN_PATHS = ['plugins/', ]
+PLUGINS = [
+    'assets',
+    'pelican_fontawesome',
+    #'extract_toc',
+    #'pelican_gist',
+    #'pelican_vimeo',
+    #'pelican_youtube',
+]
+
+# HAUNTR CONFIG
+THEME = 'hauntr'
+DIRECT_TEMPLATES = (('index', 'archives', '404'))
