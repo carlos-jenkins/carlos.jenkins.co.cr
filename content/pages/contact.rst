@@ -13,6 +13,12 @@ Contact
 `@carlos-jenkins <https://github.com/carlos-jenkins>`__
 
 
+:fa:`fa-stack-overflow` (Stack Overflow)
+========================================
+
+`@Havok <http://stackoverflow.com/users/439494/havok>`__
+
+
 :fa:`fa-envelope` (Email)
 =========================
 

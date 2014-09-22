@@ -10,15 +10,31 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = ''
-RELATIVE_URLS = False
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
-DELETE_OUTPUT_DIRECTORY = True
-
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+
+RELATIVE_URLS = False
+
+FEED_ATOM = "feeds/atom.xml"
+FEED_RSS = "feeds/rss.xml"
+
+DELETE_OUTPUT_DIRECTORY = False
+
+PLUGINS.append('minify')
+PLUGINS.append('sitemap')
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5,
+    },
+    'changefreqs': {
+        'articles': 'daily',
+        'indexes': 'daily',
+        'pages': 'daily',
+    }
+}
