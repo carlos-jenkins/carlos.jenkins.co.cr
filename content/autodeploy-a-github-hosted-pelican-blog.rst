@@ -75,26 +75,34 @@ Clone website repository
    sudo -H -u www-data git clone --recursive git@github.com:you/my.site.com.git
 
 
-Clone ``github-webhook-wrapper``
+Clone ``python-github-webhooks``
 --------------------------------
 
-`github-webhook-wrapper <https://github.com/datafolklabs/github-webhook-wrapper>`_
+`python-github-webhooks <https://github.com/carlos-jenkins/python-github-webhooks>`_
 will allow you to script the built of your site when you push it.
 
 .. code:: bash
 
    cd /var/www/site.com/my/
-   sudo -H -u www-data git clone git@github.com:datafolklabs/github-webhook-wrapper.git
+   sudo -H -u www-data git clone git@github.com:carlos-jenkins/python-github-webhooks.git
+
+Install ``python-github-webhooks`` dependencies:
+
+.. code:: bash
+
+   sudo apt-get install python-pip
+   cd /var/www/site.com/my/python-github-webhooks
+   sudo pip install -r requirements.txt
 
 
 Configure Apache for Github webhooks
 ------------------------------------
 
-Enable CGI scripts in Apache:
+Install and enable WSGI support in Apache:
 
 .. code:: bash
 
-   sudo a2enmod cgi
+   sudo apt-get install libapache2-mod-wsgi
 
 Edit your virtual host file to look something like this:
 
@@ -106,22 +114,19 @@ Edit your virtual host file to look something like this:
        DocumentRoot /var/www/site.com/my/htdocs/
 
        # Handle Github webhook
-       <Directory "/var/www/site.com/my/github-webhook-wrapper">
-           Options +ExecCGI
-           AddHandler cgi-script .cgi
+       <Directory "/var/www/site.com/my/python-github-webhooks">
+           Order deny,allow
+           Allow from all
        </Directory>
-       Alias /da7496d7111749982285d1e2aa8bba0b0b2edd9a /var/www/site.com/my/github-webhook-wrapper
+       WSGIScriptAlias /webhooks /var/www/site.com/my/python-github-webhooks/webhooks.py
 
    </VirtualHost>
-
-**Note:** The hash is just and arbitrary hash to avoid abuse of the service.
-It can be anything, or generated with ``date +%s | sha1sum``.
 
 Do not forget to restart Apache:
 
 .. code:: bash
 
-   sudo service apache restart
+   sudo service apache2 restart
 
 
 Add webhook to your Github repository
@@ -135,7 +140,7 @@ And add a Webhook to your CGI script URL you just configure:
 
 ::
 
-   http://my.site.com/da7496d7111749982285d1e2aa8bba0b0b2edd9a/hook.cgi
+   http://my.site.com/webhooks
 
 
 Create custom build script
@@ -143,10 +148,10 @@ Create custom build script
 
 .. code:: bash
 
-   cd /var/www/site.com/my/github-webhook-wrapper/scripts
-   sudo -u www-data touch my.site.com
-   sudo chmod +x my.site.com
-   sudo nano my.site.com
+   cd /var/www/site.com/my/python-github-webhooks/hooks
+   sudo -u www-data touch push-my.site.com
+   sudo chmod +x push-my.site.com
+   sudo nano push-my.site.com
 
 And add the following:
 
@@ -162,8 +167,7 @@ And add the following:
    cd /var/www/site.com/my/my.site.com
    git pull origin master
    git submodule foreach git pull origin master
-   cp -rf plugins/* ../htdocs/
-
+   cp -rf output/* ../htdocs/
 
 
 Credits
