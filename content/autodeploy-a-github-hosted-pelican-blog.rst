@@ -8,14 +8,17 @@ Autodeploy a Github-hosted Pelican blog
 :tags: pelican, apache
 :slug: autodeploy-a-github-hosted-pelican-blog
 
-.. contents::
-    :backlinks: none
-
-
 If you have a `Pelican <http://blog.getpelican.com/>`_ blog or static site and
 you version control it using `Github <https://github.com/>`_, this tutorial
 shows you how to auto deploy it to your web server each time you ``push`` your
 repository using `webhooks <https://developer.github.com/webhooks/>`_.
+
+.. contents::
+    :backlinks: none
+
+
+Steps
+=====
 
 I will assume the following:
 
@@ -31,9 +34,6 @@ I will assume the following:
   site requires.
 - Your project repository is called ``my.site.com``.
 
-
-Steps
-=====
 
 Create SSH directory
 --------------------
