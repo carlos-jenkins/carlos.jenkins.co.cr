@@ -175,6 +175,7 @@ And add the following:
    cd /var/www/site.com/my/my.site.com
    git pull origin master
    git submodule foreach git pull origin master
+   make publish
    cp -rf output/* ../htdocs/
 
 
