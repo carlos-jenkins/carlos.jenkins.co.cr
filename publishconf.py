@@ -5,7 +5,10 @@ from __future__ import unicode_literals
 # This file is only used if you use `make publish` or
 # explicitly specify it as your config file.
 
-from .pelicanconf import *  # noqa
+import sys
+sys.path.append('.')
+
+from pelicanconf import *  # noqa
 
 # Publish options
 RELATIVE_URLS = False
@@ -19,9 +22,10 @@ DISQUS_SITENAME = 'carlosjenkins'
 #GOOGLE_ANALYTICS = ""
 
 # Publish extra plugins
-PLUGINS.append('minify')
 PLUGINS.append('sitemap')
+PLUGINS.append('minify')
 
+# Sitemap plugin config
 SITEMAP = {
     'format': 'xml',
     'priorities': {
