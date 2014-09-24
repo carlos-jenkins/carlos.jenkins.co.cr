@@ -5,23 +5,20 @@ from __future__ import unicode_literals
 # This file is only used if you use `make publish` or
 # explicitly specify it as your config file.
 
-import os
-import sys
-sys.path.append(os.curdir)
-from pelicanconf import *
+from .pelicanconf import *  # noqa
 
-# Following items are often useful when publishing
+# Publish options
+RELATIVE_URLS = False
+FEED_ATOM = 'feeds/atom.xml'
+FEED_RSS = 'feeds/rss.xml'
 
-#DISQUS_SITENAME = ""
+# Disqus
+DISQUS_SITENAME = 'carlosjenkins'
+
+# Google analytics
 #GOOGLE_ANALYTICS = ""
 
-RELATIVE_URLS = False
-
-FEED_ATOM = "feeds/atom.xml"
-FEED_RSS = "feeds/rss.xml"
-
-DELETE_OUTPUT_DIRECTORY = False
-
+# Publish extra plugins
 PLUGINS.append('minify')
 PLUGINS.append('sitemap')
 
