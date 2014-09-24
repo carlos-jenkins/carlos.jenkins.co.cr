@@ -74,6 +74,14 @@ Clone website repository
    cd /var/www/site.com/my/
    sudo -H -u www-data git clone --recursive git@github.com:you/my.site.com.git
 
+Install website build dependencies:
+
+.. code:: bash
+
+   sudo apt-get install python-pip
+   cd /var/www/site.com/my/my.site.com
+   sudo pip install -r requirements.txt
+
 
 Clone ``python-github-webhooks``
 --------------------------------
