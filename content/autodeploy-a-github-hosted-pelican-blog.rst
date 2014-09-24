@@ -134,9 +134,9 @@ Add webhook to your Github repository
 
 Go to your Github repository settings:
 
-    https://github.com/carlos-jenkins/my.site.com/settings/hooks
+    https://github.com/youruser/my.site.com/settings/hooks
 
-And add a Webhook to your CGI script URL you just configure:
+And add a Webhook to the WSGI script URL:
 
 ::
 
@@ -149,9 +149,9 @@ Create custom build script
 .. code:: bash
 
    cd /var/www/site.com/my/python-github-webhooks/hooks
-   sudo -u www-data touch push-my.site.com
-   sudo chmod +x push-my.site.com
-   sudo nano push-my.site.com
+   sudo -u www-data touch push-my.site.com-master
+   sudo chmod +x push-my.site.com-master
+   sudo nano push-my.site.com-master
 
 And add the following:
 
@@ -170,6 +170,24 @@ And add the following:
    cp -rf output/* ../htdocs/
 
 
+Test you hook
+-------------
+
+You can test a hook for your repo as explained in
+`Test a push hook <https://developer.github.com/v3/repos/hooks/#test-a-push-hook>`_
+like so:
+
+.. code:: bash
+
+   curl --user "youruser" https://api.github.com/repos/youruser/my.site.com/hooks
+
+Toke note of the ``"test_url"``.
+
+.. code:: bash
+
+   curl --user "youruser" -i -X POST [TEST_URL]
+
+
 Credits
 =======
 
@@ -177,3 +195,4 @@ Thanks to:
 
 - https://gist.github.com/oodavid/1809044
 - https://github.com/datafolklabs/github-webhook-wrapper
+- https://gist.github.com/caspyin/2288960
