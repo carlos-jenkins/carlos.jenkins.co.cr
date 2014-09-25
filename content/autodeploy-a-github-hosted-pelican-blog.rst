@@ -190,7 +190,7 @@ like so:
 
    curl --user "youruser" https://api.github.com/repos/youruser/my.site.com/hooks
 
-Toke note of the ``"test_url"``.
+Take note of the ``"test_url"``.
 
 .. code:: bash
 
