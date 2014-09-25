@@ -1,5 +1,5 @@
 =======================================
-Autodeploy a Github-hosted Pelican blog
+Autodeploy a GitHub-hosted Pelican blog
 =======================================
 
 :date: 2014-09-22T16:44-0600
@@ -9,7 +9,7 @@ Autodeploy a Github-hosted Pelican blog
 :slug: autodeploy-a-github-hosted-pelican-blog
 
 If you have a `Pelican <http://blog.getpelican.com/>`_ blog or static site and
-you version control it using `Github <https://github.com/>`_, this tutorial
+you version control it using `GitHub <https://github.com/>`_, this tutorial
 shows you how to auto deploy it to your web server each time you ``push`` your
 repository using `webhooks <https://developer.github.com/webhooks/>`_.
 
@@ -54,7 +54,7 @@ Create SSH key
 Note: Leave default name and empty password.
 
 
-Add SSH key to your Github account
+Add SSH key to your GitHub account
 ----------------------------------
 
 .. code:: bash
@@ -103,7 +103,7 @@ Install ``python-github-webhooks`` dependencies:
    sudo pip install -r requirements.txt
 
 
-Configure Apache for Github webhooks
+Configure Apache for GitHub webhooks
 ------------------------------------
 
 Install and enable WSGI support in Apache:
@@ -121,7 +121,7 @@ Edit your virtual host file to look something like this:
        ServerName  my.site.com
        DocumentRoot /var/www/site.com/my/htdocs/
 
-       # Handle Github webhook
+       # Handle GitHub webhook
        <Directory "/var/www/site.com/my/python-github-webhooks">
            Order deny,allow
            Allow from all
@@ -137,10 +137,10 @@ Do not forget to restart Apache:
    sudo service apache2 restart
 
 
-Add webhook to your Github repository
+Add webhook to your GitHub repository
 -------------------------------------
 
-Go to your Github repository settings:
+Go to your GitHub repository settings:
 
     https://github.com/youruser/my.site.com/settings/hooks
 
