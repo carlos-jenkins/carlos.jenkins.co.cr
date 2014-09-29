@@ -11,8 +11,7 @@ sys.path.append('.')
 from pelicanconf import *  # noqa
 
 # Publish options
-#RELATIVE_URLS = False
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 FEED_ATOM = 'feeds/atom.xml'
 FEED_RSS = 'feeds/rss.xml'
 
