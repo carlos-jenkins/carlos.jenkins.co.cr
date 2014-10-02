@@ -10,8 +10,9 @@ Using Font Awesome in PyGObject applications
 
 For those who doesn't know about `Font Awesome`_:
 
-    "Font Awesome is a full suite of 479 pictographic icons for easy
-    scalable vector graphics on websites".
+    :fa:`fa-quote-left pull-left fa-border fa-3x pull-left fa-border`
+    `Font Awesome`_ is a full suite of 479 pictographic icons for easy
+    scalable vector graphics on websites.
 
     -- Font Awesome GitHub repository
 
