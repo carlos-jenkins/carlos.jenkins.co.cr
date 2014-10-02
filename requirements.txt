@@ -2,7 +2,6 @@ Pillow
 Pygments
 cssmin
 pelican
-pelican-gist
 pelican-vimeo
 pelican-youtube
 webassets

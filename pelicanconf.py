@@ -62,7 +62,6 @@ PLUGIN_PATHS = ['plugins/', ]
 PLUGINS = [
     'assets',
     'pelican_fontawesome',
-    'pelican_gist',
     'pelican_youtube',
     #'pelican_vimeo',
 ]
