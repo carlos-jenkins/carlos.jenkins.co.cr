@@ -66,9 +66,6 @@ PLUGINS = [
     #'pelican_vimeo',
 ]
 
-# Plugins options
-GIST_CACHE_ENABLED = False
-
 # Publish options
 RELATIVE_URLS = True
 FEED_ATOM = None
