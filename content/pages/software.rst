@@ -46,7 +46,6 @@ connection speed over time.
 For a live demo visit: http://speed.jenkins.co.cr/
 
 .. image:: https://raw.githubusercontent.com/carlos-jenkins/frog-croak/master/screenshot.png
-   :width: 800px
    :target: https://github.com/carlos-jenkins/frog-croak/
    :alt: Project Home
 
@@ -59,7 +58,6 @@ Galaxy
 Galaxy is a C++, SDL based Space Invaders clone.
 
 .. image:: https://raw.githubusercontent.com/carlos-jenkins/galaxy/master/media/screenshot.png
-   :width: 800px
    :target: https://github.com/carlos-jenkins/galaxy
    :alt: Project Home
 
