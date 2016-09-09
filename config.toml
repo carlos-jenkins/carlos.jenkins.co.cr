@@ -40,8 +40,8 @@ paginate = 10
 
     [params.about]
         hide  = false
-        title = "Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque."
-        content = "Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia."
+        title = "Carlos Jenkins"
+        content = "Hacker, engineer and Open Source Hacktivist.<br> Python and Hardware gurú.<br> Always looking for a challenge."
 
 
     [params.portfolio]
@@ -113,7 +113,7 @@ paginate = 10
         # - send a dummy email yourself to confirm your account
         # - click the confirm link in the email from www.formspree.io
         # - you're done. Happy mailing!
-        email = "hello@example.com"
+        email = "carlos@jenkins.co.cr"
 
         [params.contact.form]
             # Set custom strings for the form if your native
