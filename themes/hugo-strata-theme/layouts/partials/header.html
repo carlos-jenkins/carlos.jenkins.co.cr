@@ -46,10 +46,10 @@
             </a>
         </li>
         {{ end }}
-        {{ with .Site.Params.contact.email }}
+        {{ if not .Site.Params.contact.hide }}
         <li>
             <a
-                href="{{ $.Site.BaseURL }}#contact-form"
+                href="{{ $.Site.BaseURL }}#contact"
                 class="icon fa-envelope-o">
                 <span class="label">Email</span>
             </a>

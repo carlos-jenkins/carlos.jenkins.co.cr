@@ -2566,6 +2566,13 @@
 				padding-top: 0;
 			}
 
+/* Contact */
+
+div.email {
+    font-size: 2em;
+    margin: 1em 0 25% 2em;
+}
+
 /* Poptrox */
 
 	@-moz-keyframes spin {
@@ -3127,6 +3134,12 @@
 				padding-left: 0;
 			}
 
+		/* Contact */
+		div.email {
+			margin: 1em auto 25% auto;
+			width: fit-content;
+			font-size: 1.5em;
+		}
 	}
 
 

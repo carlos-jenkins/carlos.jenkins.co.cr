@@ -9,11 +9,10 @@
 	var settings = {
 
 		// Parallax background effect?
-			parallax: true,
+		parallax: true,
 
 		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 20
-
+		parallaxFactor: 20
 	};
 
 	skel.breakpoints({
@@ -99,7 +98,7 @@
 			// Lightbox gallery.
 				$window.on('load', function() {
 
-					$('#two').poptrox({
+					$('#portfolio').poptrox({
 						caption: function($a) { return $a.next('h3').text(); },
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
