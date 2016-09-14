@@ -71,6 +71,27 @@ paginate = 10
             link = "https://github.com/mivotico/"
 
         [[params.portfolio.gallery]]
+            image = "frogcroak.png"
+            thumb = "frogcroak.png"
+            title = "Frog Croak"
+            description = "Frog Croak is a tool that allows users to monitor and analyse their Internet connection speed over time."
+            link = "https://github.com/carlos-jenkins/frog-croak/"
+
+        [[params.portfolio.gallery]]
+            image = "flameofknowledge.jpg"
+            thumb = "flameofknowledge.thumb.png"
+            title = "Flame Of Knowledge"
+            description = "The Flame Of Knowledge is a sort of bending machine designed to distribute Open Source Software, culture and knowledge. It was created with the support of the National University (UNA), the Ministry of Economy, Industry and Trade of Costa Rica (MEIC) and the United Nations Development Programme (UNDP)."
+            link = "https://flameofknowledge.wordpress.com/"
+
+        [[params.portfolio.gallery]]
+            image = "nested.png"
+            thumb = "nested.png"
+            title = "Nested Editor"
+            description = "Specialized editor focused on creating structured documents such as reports, thesis, users guides, for the academia and technical documentation."
+            link = "http://nestededitor.sourceforge.net/"
+
+        [[params.portfolio.gallery]]
             image = "galaxy.png"
             thumb = "galaxy.png"
             title = "Galaxy"
