@@ -48,12 +48,18 @@ paginate = 10
         hide  = false
         title = "Projects"
 
+        # Under consideration:
+        # - Webdev
+        # - libviface
+        # - relay-shield
+        # - ntc-i2c-mb
+
         # The images and thumbnails are stored under static/images/portfolio
         [[params.portfolio.gallery]]
             image = "topology.png"
             thumb = "topology.png"
             title = "Topology Modular Framework"
-            description = "Advanced modular framework for building and testing network topologies and Software."
+            description = "Advanced modular framework for building and testing network topologies and Software with support for Docker and physical hardware using SSH/Telnet."
             link = "http://topology.readthedocs.io/"
 
         [[params.portfolio.gallery]]
@@ -69,6 +75,20 @@ paginate = 10
             title = "MiVotico"
             description = "Mobile app that facilitates people to find their election day polling place using Open Data."
             link = "https://github.com/mivotico/"
+
+        [[params.portfolio.gallery]]
+            image = "smartlights.jpg"
+            thumb = "smartlights.jpg"
+            title = "PlantWeb"
+            description = "Plantweb is a project that provides a command line interface, Sphinx directives and an API that allows to render powerful plain text UML diagrams, ASCII diagrams and complex graphs using the PlantUML server."
+            link = "https://plantweb.readthedocs.io/"
+
+        [[params.portfolio.gallery]]
+            image = "smartlights.jpg"
+            thumb = "smartlights.jpg"
+            title = "AutoAPI"
+            description = "Automatic Python API reference documentation generator for Sphinx, inspired by Doxygen."
+            link = "https://autoapi.readthedocs.io/"
 
         [[params.portfolio.gallery]]
             image = "frogcroak.png"
