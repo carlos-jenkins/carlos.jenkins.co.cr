@@ -48,43 +48,34 @@ paginate = 10
         hide  = false
         title = "Projects"
 
-        # The images and thumbnails are stored under static/images
-        # Create and change subfolders as you like
+        # The images and thumbnails are stored under static/images/portfolio
         [[params.portfolio.gallery]]
-            image = "fulls/01.jpg"
-            thumb = "thumbs/01.jpg"
-            title = "Lorem ipsum dolor."
-            description = "Lorem ipsum dolor sit amet."
+            image = "topology.png"
+            thumb = "topology.png"
+            title = "Topology Modular Framework"
+            description = "Advanced modular framework for building and testing network topologies and Software."
+            link = "http://topology.readthedocs.io/"
 
         [[params.portfolio.gallery]]
-            image = "fulls/02.jpg"
-            thumb = "thumbs/02.jpg"
-            title = "Lorem ipsum dolor."
-            description = "Lorem ipsum dolor sit amet."
+            image = "smartlights.jpg"
+            thumb = "smartlights.jpg"
+            title = "Smart Lights"
+            description = "Smart Lights its a Hardware and Software project that aims to create the next generation traffic lights for Smart Cities and Autonomous Vehicles. Won 3rd place at the Hardwarethon 2016."
+            link = "https://github.com/carlos-jenkins/smart-lights"
 
         [[params.portfolio.gallery]]
-            image = "fulls/03.jpg"
-            thumb = "thumbs/03.jpg"
-            title = "Lorem ipsum dolor."
-            description = "Lorem ipsum dolor sit amet."
+            image = "smartlights.jpg"
+            thumb = "smartlights.jpg"
+            title = "MiVotico"
+            description = "Mobile app that facilitates people to find their election day polling place using Open Data."
+            link = "https://github.com/mivotico/"
 
         [[params.portfolio.gallery]]
-            image = "fulls/04.jpg"
-            thumb = "thumbs/04.jpg"
-            title = "Lorem ipsum dolor."
-            description = "Lorem ipsum dolor sit amet."
-
-        [[params.portfolio.gallery]]
-            image = "fulls/05.jpg"
-            thumb = "thumbs/05.jpg"
-            title = "Lorem ipsum dolor."
-            description = "Lorem ipsum dolor sit amet."
-
-        [[params.portfolio.gallery]]
-            image = "fulls/06.jpg"
-            thumb = "thumbs/06.jpg"
-            title = "Lorem ipsum dolor."
-            description = "Lorem ipsum dolor sit amet."
+            image = "galaxy.png"
+            thumb = "galaxy.png"
+            title = "Galaxy"
+            description = "Galaxy is a C++, SDL based game inspired by Space Invaders."
+            link = "https://github.com/carlos-jenkins/galaxy/"
 
     [params.recentposts]
         hide  = true

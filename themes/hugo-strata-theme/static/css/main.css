@@ -2566,11 +2566,22 @@
 				padding-top: 0;
 			}
 
+/* Portfolio */
+
+#portfolio p.link {
+	text-align: right;
+	padding-top: 1em;
+}
+
+#portfolio p.description {
+	text-align: justify;
+}
+
 /* Contact */
 
 div.email {
-    font-size: 2em;
-    margin: 1em 0 25% 2em;
+	font-size: 2em;
+	margin: 1em 0 25% 2em;
 }
 
 /* Poptrox */
