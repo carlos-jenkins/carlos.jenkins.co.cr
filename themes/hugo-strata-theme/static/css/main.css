@@ -2440,22 +2440,31 @@
 			cursor: default;
 		}
 
-/* Work Item */
+/* Portfolio */
 
-	.work-item {
+	#portfolio p.link {
+		text-align: right;
+		padding-top: 1em;
+	}
+
+	#portfolio p.description {
+		text-align: justify;
+	}
+
+	.portfolio-item {
 		margin: 0 0 2em 0;
 	}
 
-		.work-item .image {
+		.portfolio-item .image {
 			margin: 0 0 1.5em 0;
 		}
 
-		.work-item h3 {
+		.portfolio-item h3 {
 			font-size: 1em;
 			margin: 0 0 0.5em 0;
 		}
 
-		.work-item p {
+		.portfolio-item p {
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
@@ -2565,17 +2574,6 @@
 				margin-top: 0;
 				padding-top: 0;
 			}
-
-/* Portfolio */
-
-#portfolio p.link {
-	text-align: right;
-	padding-top: 1em;
-}
-
-#portfolio p.description {
-	text-align: justify;
-}
 
 /* Contact */
 

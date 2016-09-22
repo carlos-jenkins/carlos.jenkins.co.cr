@@ -2,23 +2,26 @@
 <section>
     {{ with .Site.Params.portfolio.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
     <div class="row" id="portfolio">
-        {{ range .Site.Params.portfolio.gallery }}
-        <article class="6u 12u$(xsmall) work-item">
+        {{ range $index, $element := .Site.Params.portfolio.gallery }}
+        <article class="6u 12u$(xsmall) portfolio-item">
             <a
-                href="{{ $.Site.BaseURL }}images/portfolio/{{ .image }}"
-                class="image fit thumb">
+                href="{{ $.Site.BaseURL }}portfolio/{{ .full }}"
+                class="image fit thumb"
+                data-sub-html="#caption_{{ $index }}">
                     <img
-                        src="{{ $.Site.BaseURL }}images/portfolio/{{ .thumb }}"
+                        src="{{ $.Site.BaseURL }}portfolio/{{ .thumb }}"
                         alt="{{ .title | plainify }}" />
             </a>
-            <h3>{{ .title | markdownify }}</h3>
-            <p class="description">
-                {{ .description | markdownify }}
-            </p>
-            <p class="link">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-                <a href="{{ .link }}">{{ .link }}</a>
-            </p>
+            <div id="caption_{{ $index }}" class="caption">
+                <h3>{{ .title | markdownify }}</h3>
+                <p class="description">
+                    {{ .description | markdownify }}
+                </p>
+                <p class="link">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <a href="{{ .link }}">{{ .link }}</a>
+                </p>
+            </div>
         </article>
         {{ end }}
     </div>

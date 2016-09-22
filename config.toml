@@ -25,7 +25,7 @@ paginate = 10
     [params.sidebar]
         avatar = "avatar.jpg"
         # Use Markdown to format the string. This works nearly all over the theme
-        bio = "Hacker, engineer and Open Source Hacktivist.<br> Python and Hardware gurú.<br> Always looking for a challenge."
+        bio = "Hacker, engineer and Open Source activist.<br> Passionate with Python and IoT.<br> Always looking for a challenge."
 
         # The icons will be shown if you enter your username
         github = "carlos-jenkins"
@@ -56,63 +56,63 @@ paginate = 10
 
         # The images and thumbnails are stored under static/images/portfolio
         [[params.portfolio.gallery]]
-            image = "topology.png"
+            full = "topology.png"
             thumb = "topology.png"
             title = "Topology Modular Framework"
-            description = "Advanced modular framework for building and testing network topologies and Software with support for Docker and physical hardware using SSH/Telnet."
+            description = "Advanced modular framework for building and testing network topologies and Software in virtual and physical environments used by industry leading companies."
             link = "http://topology.readthedocs.io/"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
+            full = "smartlights.jpg"
             thumb = "smartlights.jpg"
             title = "Smart Lights"
             description = "Smart Lights its a Hardware and Software project that aims to create the next generation traffic lights for Smart Cities and Autonomous Vehicles. Won 3rd place at the Hardwarethon 2016."
             link = "https://github.com/carlos-jenkins/smart-lights"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
+            full = "smartlights.jpg"
             thumb = "smartlights.jpg"
             title = "MiVotico"
             description = "Mobile app that facilitates people to find their election day polling place using Open Data."
             link = "https://github.com/mivotico/"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
+            full = "smartlights.jpg"
             thumb = "smartlights.jpg"
             title = "PlantWeb"
             description = "Plantweb is a project that provides a command line interface, Sphinx directives and an API that allows to render powerful plain text UML diagrams, ASCII diagrams and complex graphs using the PlantUML server."
             link = "https://plantweb.readthedocs.io/"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
+            full = "smartlights.jpg"
             thumb = "smartlights.jpg"
             title = "AutoAPI"
             description = "Automatic Python API reference documentation generator for Sphinx, inspired by Doxygen."
             link = "https://autoapi.readthedocs.io/"
 
         [[params.portfolio.gallery]]
-            image = "frogcroak.png"
+            full = "frogcroak.png"
             thumb = "frogcroak.png"
             title = "Frog Croak"
             description = "Frog Croak is a tool that allows users to monitor and analyse their Internet connection speed over time."
             link = "https://github.com/carlos-jenkins/frog-croak/"
 
         [[params.portfolio.gallery]]
-            image = "flameofknowledge.jpg"
+            full = "flameofknowledge.jpg"
             thumb = "flameofknowledge.thumb.png"
             title = "Flame Of Knowledge"
             description = "The Flame Of Knowledge is a sort of bending machine designed to distribute Open Source Software, culture and knowledge. It was created with the support of the National University (UNA), the Ministry of Economy, Industry and Trade of Costa Rica (MEIC) and the United Nations Development Programme (UNDP)."
             link = "https://flameofknowledge.wordpress.com/"
 
         [[params.portfolio.gallery]]
-            image = "nested.png"
+            full = "nested.png"
             thumb = "nested.png"
             title = "Nested Editor"
             description = "Specialized editor focused on creating structured documents such as reports, thesis, users guides, for the academia and technical documentation."
             link = "http://nestededitor.sourceforge.net/"
 
         [[params.portfolio.gallery]]
-            image = "galaxy.png"
+            full = "galaxy.webm"
             thumb = "galaxy.png"
             title = "Galaxy"
             description = "Galaxy is a C++, SDL based game inspired by Space Invaders."
