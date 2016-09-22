@@ -96,7 +96,8 @@
 		// Main Sections: Two.
 			$( document ).ready(function() {
 				$('#portfolio').lightGallery({
-					selector: '.portfolio-item a.image'
+					selector: '.portfolio-item a.image',
+					download: false
 				});
 			});
 	});

@@ -12,8 +12,8 @@
 		{{ .Hugo.Generator }}
 
 		{{ "<!--[if lte IE 8]><script src='{{ .Site.BaseURL }}js/ie/html5shiv.js'></script><![endif]-->" | safeHTML}}
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/css/lightgallery.css" type="text/css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/lightgallery.css" />
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
 		{{ "<!--[if lte IE 8]><link rel='stylesheet' href='{{ .Site.BaseURL }}/css/ie8.css' /><![endif]-->" | safeHTML}}
 
