@@ -4,14 +4,33 @@
     <div class="row" id="portfolio">
         {{ range $index, $element := .Site.Params.portfolio.gallery }}
         <article class="6u 12u$(xsmall) portfolio-item">
+            {{ if isset . "image" }}
             <a
-                href="{{ $.Site.BaseURL }}portfolio/{{ .full }}"
-                class="image fit thumb"
+                href="{{ $.Site.BaseURL }}portfolio/{{ .image }}"
+                class="image fit thumb gallery-selector"
                 data-sub-html="#caption_{{ $index }}">
                     <img
                         src="{{ $.Site.BaseURL }}portfolio/{{ .thumb }}"
                         alt="{{ .title | plainify }}" />
             </a>
+            {{ else if isset . "video" }}
+            <div style="display:none;" id="video_{{ $index }}">
+                <video
+                    class="lg-video-object lg-html5"
+                    controls preload="none">
+                        <source src="{{ $.Site.BaseURL }}portfolio/{{ .video }}">
+                        Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <span
+                class="image fit thumb gallery-selector"
+                data-html="#video_{{ $index }}"
+                data-sub-html="#caption_{{ $index }}">
+                    <img
+                        src="{{ $.Site.BaseURL }}portfolio/{{ .thumb }}"
+                        alt="{{ .title | plainify }}" />
+            </span>
+            {{ end }}
             <div id="caption_{{ $index }}" class="caption">
                 <h3>{{ .title | markdownify }}</h3>
                 <p class="description">
