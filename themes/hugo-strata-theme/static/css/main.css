@@ -2470,6 +2470,10 @@
 			margin: 0;
 		}
 
+	.gallery-selector {
+		cursor: pointer;
+	}
+
 /* Header */
 
 	#header {
