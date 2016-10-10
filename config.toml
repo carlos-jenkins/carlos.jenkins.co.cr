@@ -41,7 +41,7 @@ paginate = 10
     [params.about]
         hide  = false
         title = "Carlos Jenkins"
-        content = "Hacker, engineer and Open Source Hacktivist.<br> Python and Hardware gurú.<br> Always looking for a challenge."
+        content = "Hi I'm Carlos Jenkins, I'm a passionate Software Engineer and autodidact Open Source hacker who likes to develop interesting and challenging new technologies. I like to hack and design in many areas, but specially Python and hardware, embedded and IoT projects. In my spare time I like to do wall climbing, Yoga and exercise in general, travel, ride my motorcycle, watch movies (I'm a serious home cinema buff) and play video games (230+ in Steam and counting). I also like to design furniture and do some woodworking."
 
 
     [params.portfolio]
@@ -63,29 +63,29 @@ paginate = 10
             link = "http://topology.readthedocs.io/"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
             thumb = "smartlights.jpg"
+            video = "smartlights.webm"
             title = "Smart Lights"
             description = "Smart Lights its a Hardware and Software project that aims to create the next generation traffic lights for Smart Cities and Autonomous Vehicles. Won 3rd place at the Hardwarethon 2016."
             link = "https://github.com/carlos-jenkins/smart-lights"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
-            thumb = "smartlights.jpg"
+            thumb = "mivotico.png"
+            image = "mivotico.png"
             title = "MiVotico"
             description = "Mobile app that facilitates people to find their election day polling place using Open Data."
             link = "https://github.com/mivotico/"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
-            thumb = "smartlights.jpg"
+            image = "plantweb.png"
+            thumb = "plantweb.png"
             title = "PlantWeb"
             description = "Plantweb is a project that provides a command line interface, Sphinx directives and an API that allows to render powerful plain text UML diagrams, ASCII diagrams and complex graphs using the PlantUML server."
             link = "https://plantweb.readthedocs.io/"
 
         [[params.portfolio.gallery]]
-            image = "smartlights.jpg"
-            thumb = "smartlights.jpg"
+            image = "autoapi.png"
+            thumb = "autoapi.png"
             title = "AutoAPI"
             description = "Automatic Python API reference documentation generator for Sphinx, inspired by Doxygen."
             link = "https://autoapi.readthedocs.io/"
@@ -105,6 +105,12 @@ paginate = 10
             link = "https://flameofknowledge.wordpress.com/"
 
         [[params.portfolio.gallery]]
+            thumb = "laser.jpg"
+            video = "laser.webm"
+            title = "Laser Projector"
+            description = "Arduino based homemade laser projector using a 100mW green laser and controlling  a couple of galvanometers using a MCP4922."
+
+        [[params.portfolio.gallery]]
             image = "nested.png"
             thumb = "nested.png"
             title = "Nested Editor"
@@ -112,8 +118,8 @@ paginate = 10
             link = "http://nestededitor.sourceforge.net/"
 
         [[params.portfolio.gallery]]
-            video = "galaxy.webm"
             thumb = "galaxy.png"
+            video = "galaxy.webm"
             title = "Galaxy"
             description = "Galaxy is a C++, SDL based game inspired by Space Invaders."
             link = "https://github.com/carlos-jenkins/galaxy/"
