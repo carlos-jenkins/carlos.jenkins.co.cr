@@ -118,8 +118,8 @@ paginate = 10
             link = "http://nestededitor.sourceforge.net/"
 
         [[params.portfolio.gallery]]
-            thumb = "galaxy.png"
             video = "galaxy.webm"
+            thumb = "galaxy.jpg"
             title = "Galaxy"
             description = "Galaxy is a C++, SDL based game inspired by Space Invaders."
             link = "https://github.com/carlos-jenkins/galaxy/"
